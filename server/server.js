@@ -8,7 +8,7 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 const app = require('./app');
 const User = require('./models/User');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const DB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/task_management';
 
 const seedDefaultUsers = async () => {
